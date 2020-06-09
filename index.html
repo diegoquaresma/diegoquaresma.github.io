@@ -31,17 +31,14 @@
   
 	<style>
 		.whatsapp-link {
-		  position: fixed;
-			width: 35px;
+			position: fixed;
+			width: 60px;
 			height: 60px;
-			bottom: 60px;
+			bottom: 40px;
 			right: 40px;
-	
-	
 			border-radius: 50px;
 			text-align: center;
 			font-size: 30px;
-			
 			z-index: 1000;
 		}
  
@@ -130,12 +127,40 @@
     </div>
   </section><!-- #intro -->
 
-	<a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
+  <!--<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511970510672" target="_blank"></a>
     
-      
-      <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
-	</a>
+    <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank"></a>-->
+    
+      <script>
+          function detectar_mobile() { 
+          if( navigator.userAgent.match(/Android/i)
+          || navigator.userAgent.match(/webOS/i)
+          || navigator.userAgent.match(/iPhone/i)
+          || navigator.userAgent.match(/iPad/i)
+          || navigator.userAgent.match(/iPod/i)
+          || navigator.userAgent.match(/BlackBerry/i)
+          || navigator.userAgent.match(/Windows Phone/i)
+          ){
+              return true;
+            }
+          else {
+              return false;
+            }
+          }
 
+          var returBrowser = document.getElementById("detectar_mobile");
+          window.onload = function{
+            returBrowser.innerHTML = <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
+        <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
+      </a>
+          }
+
+      </script>
+      
+  
+      <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
+        <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
+      </a>
     <!--==========================
       Quem Somos Section
     ============================-->

@@ -131,6 +131,13 @@
     
     <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank"></a>-->
     
+
+
+    <a  class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
+      <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
+      </a>
+
+
       <script>
           function detectar_mobile() { 
           if( navigator.userAgent.match(/Android/i)
@@ -147,20 +154,30 @@
               return false;
             }
           }
-
-          var returBrowser = document.getElementById("detectar_mobile");
-          window.onload = function{
-            returBrowser.innerHTML = <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
-        <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
-      </a>
+          var returBrowser = detectar_mobile()
+          
+        /*
+          if (returBrowser == true){ 
+            <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
+            <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
+            </a> 
+                  
           }
-
+          else if (returBrowser == false){
+            <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511970510672" target="_blank">
+            <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
+            </a>
+            
+          }
+        */
+      /*var p1 = window.document.querySelector('a.whatsapp-link')
+      window.document.write(p1.innerHTML)*/
+      
       </script>
       
+      
   
-      <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
-        <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
-      </a>
+ 
     <!--==========================
       Quem Somos Section
     ============================-->
@@ -171,7 +188,7 @@
           <h3>Quem Somos</h3>
           <p>Somos uma empresa com <span style="font-style: oblique; font-weight: bold;">essencia</span> jovem e moderna que busca descomplicar os processos para regulamentar o funcionamento da sua empresa. 
             Nossa missão é dar <strong><span style="font-style: oblique" >liberdade para você empresário</span></strong>  
-            deixar de gastar energia com a burocracia e focar no <span style="font-style: oblique">coração</span> do seu negócio.</p>
+            deixar de gastar energia com a burocracia e focar no <strong><span style="font-style: oblique">coração</span></strong> do seu negócio.</p>
         </header>
 
         <div class="row about-container">
@@ -363,7 +380,7 @@
       <div class="container">
         <header class="section-header">
           <h3>Por que escolher a ESSENCE?</h3>
-          <p>Porque somos a escolha certa, vamos resolver todas as suas adequações de forma rapidá e eficiente!</p>
+          <p>Porque somos a escolha certa! <br>Vamos resolver todas as suas adequações de forma rapidá e eficiente!</p>
         </header>
 
       <!--  
@@ -758,7 +775,7 @@
 
         <div class="section-header">
           <h3>Nossos Clientes</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
+          <p>A satisfação de nossos clientes é o nosso maior patrimônio.</p>
         </div>
 
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
@@ -824,7 +841,7 @@
       <div class="container-fluid">
 
         <div class="section-header">
-          <h3>Entre em contato a Assessoria Essence</h3>
+          <h3>Entre em contato com a Assessoria Essence</h3>
         </div>
 
         <div class="row wow fadeInUp">
@@ -862,23 +879,23 @@
               <form action="" method="post" role="form" class="contactForm">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Por favor, digite pelo menos 4 caracteres" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Seu melhor e-mail" data-rule="email" data-msg="Por favor, insira um e-mail válido" />
                     <div class="validation"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Por favor, digite pelo menos 8 caracteres de assunto" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor, escreva algo para nós." placeholder="Mensagem"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                <div class="text-center"><button type="submit" title="Send Message">Enviar</button></div>
               </form>
             </div>
           </div>
@@ -964,7 +981,7 @@
   </footer><!-- #footer -->
 
  
-   Uncomment below i you want to use a preloader  Botão para voltral ao topo -->
+  <!--Uncomment below i you want to use a preloader  Botão para voltral ao topo -->
   <!-- <div id="preloader"></div>v<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
 
   <!-- JavaScript Libraries -->

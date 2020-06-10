@@ -132,12 +132,11 @@
     <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank"></a>-->
     
 
-
-    <a  class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
+ 
+    <a id="mobile" class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
       <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
-      </a>
-
-
+    </a>
+ 
       <script>
           function detectar_mobile() { 
           if( navigator.userAgent.match(/Android/i)
@@ -154,25 +153,21 @@
               return false;
             }
           }
+
           var returBrowser = detectar_mobile()
           
-        /*
-          if (returBrowser == true){ 
-            <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511970510672" target="_blank">
-            <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
-            </a> 
-                  
-          }
-          else if (returBrowser == false){
-            <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511970510672" target="_blank">
-            <i class="iconify" data-icon="logos:whatsapp" data-inline="false" width="60" height="60"></i>
-            </a>
-            
-          }
-        */
-      /*var p1 = window.document.querySelector('a.whatsapp-link')
-      window.document.write(p1.innerHTML)*/
+          var mobile = window.document.getElementById('mobile')
+          //window.alert(mobile)
+         
+      if (mobile == true) {
+        mobile.href= 'https://api.whatsapp.com/send?phone=5511970510672'
+          
+      }
+      else (mobile == false) 
+          mobile.href= 'https://web.whatsapp.com/send?phone=5511970510672'  
+           
       
+
       </script>
       
       
@@ -186,7 +181,7 @@
 
         <header class="section-header">
           <h3>Quem Somos</h3>
-          <p style="justify-items: initial;">Somos uma empresa com <span style="font-style: oblique; font-weight: bold;">essencia</span> jovem e moderna que busca descomplicar os processos para regulamentar o funcionamento da sua empresa. 
+          <p >Somos uma empresa com <span style="font-style: oblique; font-weight: bold;">essencia</span> jovem e moderna que busca descomplicar os processos para regulamentar o funcionamento da sua empresa. 
             Nossa missão é dar <strong><span style="font-style: oblique" >liberdade para você empresário</span></strong>  
             deixar de gastar energia com a burocracia e focar no <strong><span style="font-style: oblique">coração</span></strong> do seu negócio.</p>
         </header>
